@@ -5,9 +5,10 @@ capture = cv2.VideoCapture(0)
 #check camera
 if (capture.isOpened() == False):
   print("Unable to read camera feed")
-
+#Default resolutions of the frame are obtained
 frame_width = int(capture.get(3))
 frame_height = int(capture.get(4))
+
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 #write video
 out = cv2.VideoWriter('output.avi',fourcc, 20, (frame_width,frame_height))
