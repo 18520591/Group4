@@ -21,9 +21,7 @@ module Div(Out, InA, InB);
 					Sign = InA[31] ^ InB[31];
 					Exponent_A = InA[30:23];
 					Exponent_B = InB[30:23];
-					Fraction_A = {1'b1, InA[22:0], 24'b0}; // ý t??ng : ví d? s? th?p phân 4/8=0 thì mình l?y thêm là 40/8 =5
-										// s? binary này mình l?y 23 bit xong thêm 23 bit 0 vào r?i chia cho tk kia
-										// m th? v?i module div bên d??i s? th?y
+					Fraction_A = {1'b1, InA[22:0], 24'b0}; 
 					Fraction_B = {24'b0,1'b1, InB[22:0]};
 					Exponent_Temp = (Exponent_A - 8'd127) - (Exponent_B - 8'd127) + 8'd127;
 					Fraction_Temp = Fraction_A / Fraction_B;
