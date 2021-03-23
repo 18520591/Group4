@@ -27,7 +27,7 @@ module Div(Out, InA, InB);
 					Fraction_B = {24'b0,1'b1, InB[22:0]};
 					Exponent_Temp = (Exponent_A - 8'd127) - (Exponent_B - 8'd127) + 8'd127;
 					Fraction_Temp = Fraction_A / Fraction_B;
-				if (Fraction_Temp[22] ==1 && Fraction_Temp[23] ==1)
+				if (Fraction_Temp[23] ==1)
 					begin
 						Fraction = {Fraction_Temp[22:0]};
 						Exponent = Exponent_Temp-1;
