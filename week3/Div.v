@@ -1,10 +1,9 @@
 module Div(Out, InA, InB);
-	input [31:0]InA, InB;
-	output reg [31:0]Out; 
-	reg sign;
+	input [31:0] InA, InB;
+	output  reg[31:0] Out;
+	reg Sign;
 	reg [7:0] Exponent_A, Exponent_B, Exponent, Exponent_Temp;
-	reg [46:0] Fraction_A, Fraction_B;
-	reg [23:0] Fraction_Temp;
+	reg [47:0] Fraction_Temp, Fraction_B, Fraction_A;
 	reg [22:0] Fraction;
 	
 	always @(*)
@@ -19,14 +18,16 @@ module Div(Out, InA, InB);
 				Out = 32'bz;
 			else
 				begin
-					sign = InA[31] ^ InB[31];
+					Sign = InA[31] ^ InB[31];
 					Exponent_A = InA[30:23];
 					Exponent_B = InB[30:23];
-					Fraction_A = {1'b1, InA[22:0], 24'b0};
+					Fraction_A = {1'b1, InA[22:0], 24'b0}; // ý t??ng : ví d? s? th?p phân 4/8=0 thì mình l?y thêm là 40/8 =5
+										// s? binary này mình l?y 23 bit xong thêm 23 bit 0 vào r?i chia cho tk kia
+										// m th? v?i module div bên d??i s? th?y
 					Fraction_B = {24'b0,1'b1, InB[22:0]};
 					Exponent_Temp = (Exponent_A - 8'd127) - (Exponent_B - 8'd127) + 8'd127;
-					Fraction_Temp = Fraction_A / Fraction_B;	
-					if (Fraction_Temp[22] ==1)
+					Fraction_Temp = Fraction_A / Fraction_B;
+				if (Fraction_Temp[22] ==1)
 					begin
 						Fraction = {Fraction_Temp[22:0]};
 						Exponent = Exponent_Temp-1;
@@ -36,7 +37,7 @@ module Div(Out, InA, InB);
 						Fraction = Fraction_Temp[23:1];
 						Exponent = Exponent_Temp;
 					end
-					Out = {sign, Exponent, Fraction};
+					Out = {Sign, Exponent, Fraction};
 				end
 	end
 endmodule
