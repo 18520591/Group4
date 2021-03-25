@@ -63,5 +63,5 @@ module Sub(Sub, InA, InB);
 			end
 		end
 	end
-	assign Sub = {Sign, Exponent, Fraction[22:0]};
+	assign Sub = (InA == InB) ? 32'd0 : {Sign, Exponent, Fraction[22:0]};
 endmodule
