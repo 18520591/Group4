@@ -63,5 +63,5 @@ module Add(Out, InA, InB);
 			end
 		end
 	end
-	assign Out = {Sign, Exponent, Fraction[22:0]};
+	assign Out = (InA == 32'd0 && InB == 32'd0) ? 32'd0 : {Sign, Exponent, Fraction[22:0]};
 endmodule
