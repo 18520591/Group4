@@ -15,7 +15,7 @@ module Mul(Out, InA, InB);
 	assign Exponent_Temp = (Exponent_A - 8'd127) + (Exponent_B - 8'd127) + 8'd127;
 	assign Fraction_Temp = Fraction_A * Fraction_B;
 	Normalize N(Fraction, Exponent, Fraction_Temp, Exponent_Temp);
-	assign Out = {Sign, Exponent, Fraction};
+	assign Out = (InA == 32'd0 || InB == 32'd0) ? 32'd0 : {Sign, Exponent, Fraction};
 endmodule
 
 module Normalize(Fraction, Exponent, Fraction_Temp, Exponent_Temp);
