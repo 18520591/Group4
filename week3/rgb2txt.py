@@ -45,11 +45,11 @@ def float_to_floatingPoint(a):
     return '0' + ex + fr
            
 
-img = cv.imread('/home/dat/MicrochipDesign/LAB1/anh1.jpeg')
+img = cv.imread('/home/thevu/Desktop/CE434/week2/LAB1/lucbinh.jpg')
 (height, width,depth) = img.shape
 
 
-f = open("/home/dat/MicrochipDesign/LAB1/rgb.txt","w")
+f = open("/home/thevu/Desktop/CE434/week2/LAB1/rgb.txt","w")
 for i in range(0,height):
     for j in range(0,width):
         (B, G, R) = img[i][j]
