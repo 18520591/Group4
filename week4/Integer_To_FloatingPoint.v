@@ -17,7 +17,7 @@ module Integer_To_FloatingPoint(Out, In, En);
 									((In[1]) ? 4'd2 :
 									((In[0]) ? 4'd1 : 4'd0)))))));			
 	assign Exponent = (Length_Input == 4'd0) ? 8'd0 : (127 + Length_Input - 1);
-	assign Fraction_Temp = 23'd0 + {In, 23'd0};
+	assign Fraction_Temp = {In, 23'd0};
 	assign Fraction = (Length_Input == 4'd0) ? 23'd0 : Fraction_Temp[Length_Input-1 +: 23];
 
 endmodule
