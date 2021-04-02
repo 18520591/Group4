@@ -2,5 +2,5 @@
 ## Design Flow Chart
 * We are still working on improving our flow chart.
 * [Flow_Chart](https://app.diagrams.net/#G1kA1_bKQ5Bf97h6QeS8sBBDReIkf6xTDH)
-* we have redesigned our flowchart to make it easier for viewer to follow.
+* We have redesigned our flowchart to make it easier for viewer to follow.
 ## Insert module convert integer to floating point before processing
