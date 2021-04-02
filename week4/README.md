@@ -26,6 +26,7 @@
 ![image](https://user-images.githubusercontent.com/67142437/113420073-dcc1f700-93f2-11eb-9d8d-c5ebb1fbb354.png)
 
 * Hardware utilization
+
 ** For Synthesis
 
 ![Screenshot from 2021-04-02 21-17-38](https://user-images.githubusercontent.com/52497949/113423561-e8b0b780-93f8-11eb-8e76-237b7750e773.png)
