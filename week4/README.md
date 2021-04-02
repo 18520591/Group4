@@ -19,7 +19,7 @@
 ![Screenshot from 2021-04-02 21-09-49](https://user-images.githubusercontent.com/52497949/113422956-d41fef80-93f7-11eb-8082-a29d47fbf7a8.png)
 
 
-### Synthesis 
+### Synthesis & Implementation with Artix-7(xc7a35tcpg236-1)
 
 * Ip
 
