@@ -9,7 +9,9 @@
 
 
 ## Achievements
+### Directory Architecture
 
+![image](https://user-images.githubusercontent.com/67142437/113425700-8b1e6a00-93fc-11eb-920b-a41e4d694826.png)
 
 ### Datastream
 ![Screenshot from 2021-04-02 21-05-26](https://user-images.githubusercontent.com/52497949/113422734-696eb400-93f7-11eb-8417-49407d9dd9ac.png)
@@ -50,4 +52,4 @@ For Implementation
 
 
 
-![image](https://user-images.githubusercontent.com/67142437/113425700-8b1e6a00-93fc-11eb-920b-a41e4d694826.png)
+
