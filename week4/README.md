@@ -26,8 +26,17 @@
 ![image](https://user-images.githubusercontent.com/67142437/113420073-dcc1f700-93f2-11eb-9d8d-c5ebb1fbb354.png)
 
 * Hardware utilization
-
+** For Synthesis
 ![Screenshot from 2021-04-02 21-17-38](https://user-images.githubusercontent.com/52497949/113423561-e8b0b780-93f8-11eb-8e76-237b7750e773.png)
+
+** For Implementation
+
+![Screenshot from 2021-04-02 21-26-33](https://user-images.githubusercontent.com/52497949/113424308-2530e300-93fa-11eb-936f-e19865c83d5a.png)
+
+* Power for running implementation
+
+![Screenshot from 2021-04-02 21-29-09](https://user-images.githubusercontent.com/52497949/113424563-907ab500-93fa-11eb-8d6c-f2804be04316.png)
+
 
 * Elaborate schematic
 
