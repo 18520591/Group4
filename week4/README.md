@@ -27,11 +27,11 @@
 
 * Hardware utilization
 
-** For Synthesis
+For Synthesis
 
 ![Screenshot from 2021-04-02 21-17-38](https://user-images.githubusercontent.com/52497949/113423561-e8b0b780-93f8-11eb-8e76-237b7750e773.png)
 
-** For Implementation
+For Implementation
 
 ![Screenshot from 2021-04-02 21-26-33](https://user-images.githubusercontent.com/52497949/113424308-2530e300-93fa-11eb-936f-e19865c83d5a.png)
 
