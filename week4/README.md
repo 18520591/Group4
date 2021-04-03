@@ -28,7 +28,9 @@
 ![image](https://user-images.githubusercontent.com/67142437/113420073-dcc1f700-93f2-11eb-9d8d-c5ebb1fbb354.png)
 
 * Hardware utilization
+
 DSP: Digital signal processing (bộ xử lý tín hiệu só)
+
 LUT: Look up Latr( khối logic thực thi hàm logic từ 4 đầu vào)
 
 For Synthesis
