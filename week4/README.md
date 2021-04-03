@@ -25,7 +25,7 @@
 
 * Ip
 
-![image](https://user-images.githubusercontent.com/67142437/113420073-dcc1f700-93f2-11eb-9d8d-c5ebb1fbb354.png)
+![image](https://user-images.githubusercontent.com/67142437/113467386-ebe58b00-946c-11eb-8551-7d075593f881.png)
 
 * Hardware utilization
 
