@@ -9,7 +9,7 @@
 
 
 ## Achievements
-### Directory Architecture
+### Directory Structure
 
 ![image](https://user-images.githubusercontent.com/67142437/113425700-8b1e6a00-93fc-11eb-920b-a41e4d694826.png)
 
