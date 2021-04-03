@@ -1,7 +1,7 @@
 module convert(H, S, V, HSV_Result, R, G, B, clk, RGB_Result);
-	input[31:0] R, G, B;
+	input[7:0] R, G, B;
 	input clk, RGB_Result;
-	output[31:0] H, S, V;
+	output[8:0] H, S, V;
 	output reg HSV_Result;
 	
 	wire[31:0] Max, Min, Max12, s23, v23, s34, v34, R_G, G_B, B_R, t4, t5, t6, B_Rx43, G_Bx43, R_Gx43, diff, t1, t2, t3, r, g, b;
